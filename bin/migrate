@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+
+<?php
+
+require 'vendor/autoload.php';
+
+use Exan\Migrations\Commands\Create;
+use Exan\Migrations\Commands\Migrate;
+use Exan\Migrations\Commands\Rollback;
+use Symfony\Component\Console\Application;
+
+$migrator = new Application('Migrations');
+
+$migrator->add(new Migrate());
+$migrator->add(new Rollback());
+$migrator->add(new Create());
+
+$migrator->run();
