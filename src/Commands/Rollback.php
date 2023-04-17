@@ -10,8 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     'rollback',
-    'Run migrations',
-    ['migrations:rollback']
+    'Reverse migrations'
 )]
 class Rollback extends Command
 {

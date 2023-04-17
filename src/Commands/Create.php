@@ -10,8 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     'create',
-    'Run migrations',
-    ['migrations:create']
+    'Create migration'
 )]
 class Create extends Command
 {

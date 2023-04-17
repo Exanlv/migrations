@@ -11,8 +11,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(
     'migrate',
-    'Run migrations',
-    ['migrations:run']
+    'Run migrations'
 )]
 class Migrate extends Command
 {
