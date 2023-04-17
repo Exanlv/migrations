@@ -2,6 +2,10 @@
 
 A very simple framework agnostic migrations package.
 
+```
+composer require exan/migrations
+```
+
 ## How it works
 
 For the migrations, you provide an `up.php` and an optional `down.php`. When running the migrations, all `up.php` scripts will be run if they have not previously ran.
